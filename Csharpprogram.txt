@@ -1,0 +1,1267 @@
+  c-sharp program
+1 HELLO WORD
+	namespace Csharpprogram
+{
+    internal class Program
+    {
+               static void Main(string[] args)
+        {
+            Console.WriteLine("Hello world");
+            Console.ReadLine();
+        }
+      
+    }
+}
+2  EVEN AND ODD NUMPER
+
+	namespace check1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int i;
+            Console.Write("Enter a Number : ");
+            i=Convert.ToInt32(Console.ReadLine());
+            if (i % 2 == 0)
+            {
+                Console.Write("Entered Number is an Even Number");
+                Console.ReadLine();
+            }
+            else
+            {
+                Console.Write("Entered Number is an Odd Number");
+                Console.ReadLine();
+            }
+        }
+    }
+}
+3  Negative and Positive No
+using System;
+class program
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Enter a number: ");
+        int number = Convert.ToInt32(Console.ReadLine());
+        if (number > 0)
+        {
+            Console.WriteLine("Number is positive");
+        }
+        else if (number == 0)
+        {
+            Console.WriteLine("Number is 0");
+        }
+        else
+        {
+            Console.WriteLine("Number is negative");
+        }
+        Console.ReadLine();
+    }
+}
+4   C# Program to Print all the Multiples of 17 which are Less than 100
+
+namespace Csharpprogram
+{
+    internal class Program
+    {
+               static void Main(string[] args)
+        {
+            int a, i;
+            for(i=1;i<=100; i++)
+            {
+                a = i % 17;
+                if(a==0)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+            Console.ReadLine();
+
+        }
+
+
+
+    }
+}
+5  Swping program 
+namespace Csharpprogram
+{
+    internal class Program
+    {
+               static void Main(string[] args)
+        {
+            int a = 20;
+            int b = 25;
+            int c;
+            c = b;
+            b = a;
+            a = c;
+
+            Console.WriteLine(a + " " + b);
+            Console.ReadLine();
+        }
+        
+		
+6 Swping in two keyword
+
+			namespace Csharpprogram
+{
+    internal class Program
+    {
+               static void Main(string[] args)
+        {
+            int a = 20;
+            int b = 25;
+
+            a = a + b;
+            b = a - b;
+            a = a - b;
+
+            Console.WriteLine(a + " " + b);
+            Console.ReadLine();
+        }
+        
+
+
+    }
+}
+    
+7 Factorial program
+namespace Csharpprogram
+{
+    internal class Program
+    {
+               static void Main(string[] args)
+        {
+            int i;
+            int fact = 1;
+            //  int n=Convert.ToInt32(Console.ReadLine());
+            int n=5;
+            for(i=1; i<=n; i++) { 
+            
+                fact=fact*i;
+            }
+            Console.WriteLine(fact);
+
+            Console.ReadLine();
+        }
+        
+
+8  fibnoseries
+	
+	namespace Csharpprogram
+{
+    internal class Program
+    {
+               static void Main(string[] args)
+        {
+            int n1, n2, n3,i,num;
+            n1= 0;
+            n2 = 1;
+            num = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(n1 + " \n " + n2);
+            for(i=2; i<num; i++)
+            {
+                n3 = n1 + n2;
+                Console.WriteLine(n3);
+                n1= n2;
+                n2 = n3;
+
+            }
+            Console.ReadLine();
+
+        }
+        
+
+
+    }
+}
+9 calculate natural   num sum no digit
+
+	 static void Main(string[] args)
+        {
+            int i, sum = 0, n;
+            Console.Write("Enter the Nth Number : ");
+            n=Convert.ToInt32(Console.ReadLine());
+            for (i = 0; i <= n; i++)
+            {
+                sum = sum + i;
+            }
+            Console.WriteLine("Sum of N Numbers : " + sum);
+            Console.ReadLine();
+        }
+		
+
+
+10 Check even and odd number
+internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int i = 1;
+            int n=Convert.ToInt32(Console.ReadLine());  
+            if(n%2==0)
+            {
+                Console.WriteLine("Even no");
+            }
+               else
+            {
+                Console.WriteLine("odd");
+
+            }
+            Console.ReadLine();
+
+        }
+11 
+			
+			 static void Main(string[] args)
+        {
+            Console.WriteLine("Enter a Number");
+            int num, i, res;
+            num = Convert.ToInt32(Console.ReadLine());
+            for (i = 1; i <= 10; i++)
+            {
+                res = num * i;
+                Console.Write( res);
+            }
+            Console.ReadLine();
+        }   
+		
+	
+12	 while loop program
+
+
+	static void Main(string[]args)
+	{
+		
+		
+		int i=0;
+		while(i<10)
+		{
+		Console.WriteLine(i);
+		i++;
+		}
+		Console.ReadLine();
+		}
+		}
+		
+13	For loop Example
+
+
+	static void Main(string[] args)
+	{
+		for(int i=0; i<10; i++)
+		{
+		Console.WriteLine(i);
+		}
+		Console.ReadLine();
+		}
+
+		
+		
+14	do while loop
+
+	    using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Csharpprogram
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int i=1;
+            do
+            {
+            
+                Console.WriteLine(i);
+                i++;
+
+            } while (i<10);
+        }
+        
+
+
+    }
+}
+15  break statment
+
+int i = 0;
+
+do
+{
+    Console.WriteLine("i = {0}", i);
+    i++;
+    
+    if (i > 5)
+        break;
+
+} while (i < 10);
+
+
+16 while loop break statment
+
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int i = 0;
+
+		while (true)
+		{
+			Console.WriteLine("i = {0}", i);
+			i++;
+		
+			if (i > 10)
+				break;
+		}
+	}
+}
+	17  Infinite loop  
+
+using System;
+public class program
+{
+	static void Main()
+	{
+	int i=1;
+	while(i>0)
+	{
+	Console.WriteLine(i);
+	i++;
+	}
+ }
+	
+	
+		
+16   Reverse for loop
+
+
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		for(int i = 10; i> 0;i--)
+		{
+			Console.WriteLine("Value of i: {0}", i);
+		}
+	}
+}
+
+
+17   for loop  break statment
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		for (int i = 0; i < 10; i++)
+		{
+				if( i == 5 )
+					break;
+		
+			Console.WriteLine("Value of i: {0}", i);
+		}
+
+	}
+
+18  Nested for loop 
+
+	using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		for (int i = 0; i < 2; i++)
+		{
+			for(int j =i; j < 4; j++)
+				Console.WriteLine("Value of i: {0}, J: {1} ", i,j);
+		}
+	}
+}
+19 Star Print    
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Csharpprogram
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            for(int i=1;i<=10; i++)
+            {
+                for(int j=1; j<=i; j++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+
+            }
+            Console.ReadLine();
+        }
+        
+
+
+    }
+}
+20  tringel program
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Csharpprogram
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = 10;
+            for(int i=1;i<=n; i++)
+            {
+                for(int j=1; j<=n-i; j++)
+                {
+                    Console.Write(" ");
+                }
+                for(int k=1; k<=i; k++)
+                {
+                    Console.Write(" *");
+                }
+                Console.WriteLine();
+            }
+            Console.ReadLine();
+        }
+        
+
+
+    }
+}
+    
+	21 tringel program
+	using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Csharpprogram
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = 10;
+            for(int i=1;i<=n; i++)
+            {
+                for(int j=1; j<=n-i; j++)
+                {
+                    //Console.Write(" ");
+                }
+                for(int k=1; k<=j; k++)
+                {
+                    Console.Write(" *");
+                }
+                Console.WriteLine();
+            }
+            Console.ReadLine();
+        }
+        
+
+
+    }
+}
+   22 LIST OF PROGRMA
+   using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Csharpprogram
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+             List<string> Language = new List<string>() {"java ","c#","basic","dotne"};
+            Console.WriteLine(Language[0]);
+            Console.WriteLine(Language[1]);
+            Console.WriteLine(Language[2]);
+            Console.WriteLine(Language[3]);
+            Console.WriteLine(Language[4]);
+            
+        }
+        
+
+
+    }
+}
+    
+	23  LIST  
+	using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Csharpprogram
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            List<string> Languge = new List<string>() { "java","c#",".net","java1"};
+            for(int i = 0; i < Languge.Count; i++)
+            {
+                Console.WriteLine(Languge[i]);
+            }
+            Console.ReadLine();
+            
+        }
+        
+
+        
+    }
+}
+    24  LIST add
+	using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Csharpprogram
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            List<string> Country = new List<string>() { "rusia"};
+
+            Country.Add("india");
+            Country.Add("usa");
+            for(int i = 0; i < Country.Count; i++)
+            {
+                Console.WriteLine(Country[i]);
+                
+               // Console.WriteLine(Country[i]);
+            }
+            Console.ReadLine();
+            
+        }
+        
+
+        
+    }
+}
+    25  list insert
+    using System;
+using System.Collections.Generic;
+
+class Program
+{
+    public static void Main()
+    {
+        // create a list
+        List<string> languages = new List<string>() { "Python", "Java", "C" };
+
+        // insert "JavaScript" at index 2
+        languages.Insert(2, "JavaScript");
+        
+        // display element at index 2
+        Console.WriteLine(languages[2]);
+    }
+} 
+26 list program remove
+
+	using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Csharpprogram
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            List<string> list = new List<string>() { "maruti","suzaki","bmw","rollys"};
+            list.Remove("bmw");
+            list.Remove("maruti");
+            for(int i=0;i<list.Count;i++)
+            {
+                Console.WriteLine(list[i]);
+            }
+            Console.ReadLine();
+            
+        }
+        
+
+        
+    }
+}
+    
+
+		
+27  list at revome at
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Csharpprogram
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            List<string> list = new List<string>() { "maruti","suzaki","bmw","rollys"};
+            list.RemoveAt(1);
+            list.RemoveAt(2);
+            for(int i=0;i<list.Count;i++)
+            {
+                Console.WriteLine(list[i]);
+            }
+            Console.ReadLine();
+            
+        }
+        
+
+        
+    }
+}
+    
+	28  Array
+	using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Csharpprogram
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            char[] ch = { 'a', 'd', 'r','e' };
+            for(int  i=0; i<ch.Length; i++)
+            {
+                Console.WriteLine(ch[i]);
+            }
+            Console.ReadLine();
+            
+        }
+        
+
+        
+    }
+}
+    29  for each loop
+	using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Csharpprogram
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            char[] ch = { 'a', 'b', 'c' };
+
+            foreach(char d in ch)
+            {
+                Console.WriteLine(d);
+            }
+            Console.ReadLine();
+            
+        }
+        
+
+        
+    }
+}
+30   continue statement
+using System;
+
+namespace ContinueLoop {
+
+  class Program {
+    static void Main(string[] args){
+      for (int i = 1; i <= 5; ++i{
+                
+        if (i == 3) {
+          continue;
+        }
+
+        Console.WriteLine(i);
+      }
+    }
+  }
+}
+31 for each looop  ContinueLoop
+
+using System;
+
+namespace ContinueForeach {
+  class Program {
+    static void Main(string[] args) {
+
+      int[] num = { 1, 2, 3, 4, 5 };
+      foreach(int number in num) {
+
+        // skips the iteration
+        if(number==3) {
+          continue; 
+         }
+
+        Console.WriteLine(number);
+      }
+    }
+  }
+} 
+32 try and catch
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Csharpprogram
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] color = { "red", "blue", "xray" };
+            try
+            {
+                Console.WriteLine(color[5]);
+            }
+            catch (IndexOutOfRangeException e)
+            {
+                Console.WriteLine("An Exption Occurred:" + e.Message);
+            }
+            Console.ReadLine();
+        }
+        
+
+        
+    }
+}
+    
+33  try and catch finall
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Csharpprogram
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int a=Convert.ToInt32(Console.ReadLine());
+
+            int b=Convert.ToInt32(Console.ReadLine());
+            try
+            {
+                int divide = a / b;
+                Console.WriteLine(divide);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                Console.WriteLine(a + b);
+
+            }
+            Console.ReadLine();
+
+
+        }
+        
+
+        
+    }
+}
+    	
+ 
+
+34  class and object
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Csharpprogram
+{
+    internal class Program
+    {
+        class Dog
+        {
+           public string bread;
+            public void bark()
+            {
+                Console.WriteLine("bark bark");
+            }
+        }
+        static void Main(string[] args)
+        {
+           Dog dog = new Dog();
+            dog.bark();
+            dog.bread="This is dog";
+            Console.WriteLine(dog.bread);
+            Console.ReadLine()
+
+        }
+        
+
+        
+    }
+}
+    35 method program
+ using System;
+
+namespace Method {
+
+  class Program {  
+ 
+    // method declaration
+    public void display() {
+      Console.WriteLine("Hello World");   
+    }
+
+    static void Main(string[] args) {
+
+      // create class object 
+      Program p1 = new Program();
+
+      //call method 
+      p1.display();   
+  
+      Console.ReadLine();
+     
+    }
+  }
+}    
+36   parameter program
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Csharpprogram
+{
+    internal class Program
+    {
+       class program
+        {
+            int  addnum(int a, int b)
+            {
+                int sum = a + b;
+                return sum;
+            }
+            static void Main(string[] args)
+            {
+                program p1=new program();
+               int sum= p1.addnum(100, 500);
+                Console.WriteLine(sum);
+                Console.ReadLine();
+
+            }
+        }
+        
+    }
+}
+37 math sqart method
+using System;
+
+namespace Method {
+
+  class Program {   
+    static void Main(string[] args) {
+     
+      // Built in method
+      double a = Math.Sqrt(9);
+      Console.WriteLine("Square root of 9: " + a);
+    }
+  }
+}
+38 Method overloading
+using System;
+
+namespace MethodOverload {
+
+  class Program {  
+
+    // method with one parameter
+    void display(int a) {
+      Console.WriteLine("Arguments: " + a);
+    }
+ 
+    // method with two parameters
+    void display(int a, int b) {
+      Console.WriteLine("Arguments: " + a + " and " + b);
+    } 
+    static void Main(string[] args) {
+
+      Program p1 = new Program();
+      p1.display(100);
+      p1.display(100, 200);
+      Console.ReadLine();
+    }
+  }
+}
+39
+using System;
+
+namespace MethodOverload {
+
+  class Program {  
+
+    // method with int parameter
+    void display(int a) {
+      Console.WriteLine("int type: " + a);
+    } 
+
+    // method with string parameter
+    void display(string b) {
+      Console.WriteLine("string type: " + b);
+    } 
+    static void Main(string[] args) {
+
+      Program p1 = new Program();
+      p1.display(100);
+      p1.display("Programiz");
+      Console.ReadLine();
+    }
+  }
+}
+40
+using System;
+
+namespace MethodOverload {
+
+  class Program {  
+
+    // method with int and string parameters 
+    void display(int a, string b) {
+      Console.WriteLine("int: " + a);
+      Console.WriteLine("string: " + b);
+    } 
+
+    // method with string andint parameter
+    void display(string b, int a) {
+      Console.WriteLine("string: " + b);
+      Console.WriteLine("int: " + a);
+    } 
+    static void Main(string[] args) {
+
+      Program p1 = new Program();
+      p1.display(100, "Programming");
+      p1.display("Programiz", 400);
+      Console.ReadLine();
+    }
+  }
+}
+41 palindrom
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Csharpprogram
+{
+    internal class Program
+    {
+       class program
+        {
+           static void Main(string[] args)
+            {
+                int n, r;
+                int sum = 0;
+                int temp;
+                n=Convert.ToInt32(Console.ReadLine());
+                temp = n;
+
+                while (n > 0) 
+                {
+                    r = n%10;
+                    sum = (sum*10) + r;
+                    n = n/10;
+                
+                    if(temp==sum)
+                    {
+                        Console.WriteLine("this is palindrom");
+                    }
+                    else
+                    {
+                        Console.WriteLine("this not");
+                    }
+                    Console.ReadLine();
+                }
+            }
+            
+        }
+        
+    }
+}
+  41 Armstrong
+using System;  
+  public class ArmstrongExample  
+   {  
+     public static void Main(string[] args)  
+      {  
+       int  n,r,sum=0,temp;      
+       Console.Write("Enter the Number= ");      
+       n= int.Parse(Console.ReadLine());     
+       temp=n;      
+       while(n>0)      
+       {      
+        r=n%10;      
+        sum=sum+(r*r*r);      
+        n=n/10;      
+       }      
+       if(temp==sum)      
+        Console.Write("Armstrong Number.");      
+       else      
+        Console.Write("Not Armstrong Number.");      
+      }  
+  }    
+42 sum of digit
+
+using System;  
+  public class SumExample  
+   {  
+     public static void Main(string[] args)  
+      {  
+       int  n,sum=0,m;         
+       Console.Write("Enter a number: ");      
+       n= int.Parse(Console.ReadLine());     
+       while(n>0)      
+       {      
+        m=n%10;      
+        sum=sum+m;      
+        n=n/10;      
+       }      
+       Console.Write("Sum is= "+sum);       
+     }  
+  }  
+
+43  reverse  no
+using System;  
+  public class ReverseExample  
+   {  
+     public static void Main(string[] args)  
+      {  
+       int  n, reverse=0, rem;           
+       Console.Write("Enter a number: ");      
+       n= int.Parse(Console.ReadLine());     
+       while(n!=0)      
+       {      
+        rem=n%10;        
+        reverse=reverse*10+rem;      
+        n/=10;      
+       }      
+       Console.Write("Reversed Number: "+reverse);       
+    }  
+  }  
+ 
+
+44  string legth  program
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Csharpprogram
+{
+    internal class Program
+    {
+        class program
+        {
+            static void Main(string[] args)
+            {
+                string s1 = "Computer";
+                Console.WriteLine(s1.Length);   
+                string s2 = "";
+                Console.WriteLine(s2.Length);
+                Console.ReadLine();
+            }
+        }
+    }
+}
+ 45 
+ using System;
+class Program
+{
+    static void Main()
+    {
+        const string s = "Sun Rises in the West";
+        Console.WriteLine("Sentence Before Replacing : {0} ",s);
+        string s1 = s.Replace("West", "East");
+        Console.WriteLine("Sentence After Replacing : {0} ",s1);
+        Console.ReadLine();
+    }
+}
+46
+using System;
+class Program
+{
+    static void Main()
+    {
+        string s1 = "Good";
+        string s2 ="Morning";
+        string s3=string.Concat(s1, s2);
+        Console.WriteLine(s3);
+        Console.ReadLine();
+    }
+}
+47
+ using System;
+class prog
+{
+    public static void Main()
+    {
+        int a, b;
+        Console.WriteLine("Enter the Two Numbers : ");
+        a = Convert.ToInt32(Console.ReadLine());
+        b = Convert.ToInt32(Console.ReadLine());
+        if (a > b)
+        {
+            Console.WriteLine("{0} is the Greatest Number", a);
+        }
+        else
+        {
+            Console.WriteLine("{0} is the Greatest Number ", b);
+        }
+        Console.ReadLine();
+    }
+}
+48
+using System;
+class Program
+{
+    public static void Main()
+    {
+        int fact, num;
+        Console.Write("Enter a number: ");
+
+        // take input from user 
+        num = Convert.ToInt32(Console.ReadLine());
+
+        Program obj = new Program();
+
+        // calling recursive function   
+        fact = obj.factorial(num);
+
+        Console.WriteLine("Factorial of {0} is {1}", num, fact);
+    }
+
+    // recursive function 
+    public int factorial(int num)
+    {
+        // termination condition
+        if (num == 0)
+            return 1;
+        else
+            // recursive call
+            return num * factorial(num - 1);
+    }
+}
+49
+using System;
+
+namespace MyApplication {
+
+  class Student {
+    public string name = "Sheeran";
+      
+    public void print() {
+      Console.WriteLine("Hello from Student class");
+     }
+  }
+
+  class Program {
+    static void Main(string[] args) {
+    
+      // creating object of Student class
+      Student student1 = new Student();
+      
+      // accessing name field and printing it
+      Console.WriteLine("Name: " + student1.name);
+
+      // accessing print method from Student
+      student1.print();
+      Console.ReadLine();
+    }
+  }
+}
+50 Private Accesspecifier
+using System;
+
+namespace MyApplication {
+
+  class Student {
+    private string name = "Sheeran";
+      
+    private void print() {
+      Console.WriteLine("Hello from Student class");
+     }
+  }
+
+  class Program {
+    static void Main(string[] args) {
+    
+      // creating object of Student class
+      Student student1 = new Student();
+      
+      // accessing name field and printing it
+      Console.WriteLine("Name: " + student1.name);
+
+      // accessing print method from Student
+      student1.print();
+
+      Console.ReadLine();
+    }
+  }
+}
